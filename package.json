@@ -1,9 +1,20 @@
 {
   "name": "@yhosutun2490/my-first-lib",
   "version": "0.0.0",
-  "private": true, // 是否公開
-  
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yhosutun2490/Test123.git"
+  },
+  "private": true,
   "type": "module",
+  "module": "./dist/my-first-lib.js",
+  "types": "./dist/main.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "@yhosutun2490:registry": "https://npm.pkg.github.com"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -14,6 +25,9 @@
   "dependencies": {
     "vue": "^3.4.29"
   },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
   "devDependencies": {
     "@rushstack/eslint-patch": "^1.8.0",
     "@vitejs/plugin-vue": "^5.0.5",
@@ -22,5 +36,13 @@
     "eslint-plugin-vue": "^9.23.0",
     "prettier": "^3.2.5",
     "vite": "^5.3.1"
-  }
+  },
+  "description": "This template should help get you started developing with Vue 3 in Vite.",
+  "bugs": {
+    "url": "https://github.com/yhosutun2490/Test123/issues"
+  },
+  "homepage": "https://github.com/yhosutun2490/Test123#readme",
+  "main": "vite.config.js",
+  "author": "yhosutun2490",
+  "license": "ISC"
 }

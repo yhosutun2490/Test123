@@ -1,5 +1,5 @@
 import { fileURLToPath, URL } from 'node:url'
-import { resolve,path } from 'path'
+import { resolve } from 'path'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -9,7 +9,7 @@ export default defineConfig({
   build: {
     lib: {
       // Could also be a dictionary or array of multiple entry points
-      entry: path.resolve(__dirname, 'src/main.js'),
+      entry: resolve(__dirname, 'src/main.js'),
       name: 'MyLib',
       // the proper extensions will be added
       fileName: 'my-first-lib',

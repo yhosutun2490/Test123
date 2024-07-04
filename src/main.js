@@ -11,7 +11,7 @@ export {HelloWorld}
 
 // default 引入整個app
 export default {
-  install: (app: App) => {
-    app.component('HelloWorld',HelloWorld)
+  install: () => {
+    App.component('HelloWorld',HelloWorld)
   }
 }
