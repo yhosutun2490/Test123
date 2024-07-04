@@ -1,11 +1,11 @@
 {
   "name": "@yhosutun2490/my-first-lib",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/yhosutun2490/Test123.git"
   },
-  "private": true,
+  "private": false,
   "type": "module",
   "module": "./dist/my-first-lib.js",
   "types": "./dist/main.js",
